@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reverse text</title>
+</head>
+<body>
+
+	<h3 style="text-align: center;">REVERSE TEXT </h3>
+	<input type="text" name="" id="font" style="padding: 15px; width: 400px;" onkeyup="print()">
+	<input type="text" name="" id="reverse" style="padding: 15px; width: 400px;">
+  
+  <script type="text/javascript">
+  	
+  	function print(){
+  		
+  		var str = document.getElementById('font').value;
+  		var string = "";
+
+  		for (var i = str.length - 1; i >= 0; i--) {
+  			 string += str[i];
+			}
+			document.getElementById('reverse').value = string;
+  	}
+  
+	</script>		
+
+</body>
+</html>
